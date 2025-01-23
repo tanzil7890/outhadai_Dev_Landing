@@ -24,12 +24,20 @@ const config: Config = {
       },
       animation: {
         marquee: 'marquee 25s linear infinite',
+        'loading-progress': 'loading 2s ease-in-out infinite',
       },
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-33.33%)' },
         },
+        loading: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+      },
+      fontFamily: {
+        spaceGrotesk: ['Space Grotesk', 'sans-serif'],
       },
     },
   },
